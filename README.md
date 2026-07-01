@@ -2,6 +2,6 @@
 
 ## Tech Stack
 - Turborepo
-- Next.js 15
+- Next.js 16
 - Tailwind CSS
 - shadcn/ui
