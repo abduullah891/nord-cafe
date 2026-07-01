@@ -1,0 +1,26 @@
+{
+  "name": "nord-cafe",
+  "private": true,
+  "scripts": {
+    "build": "npm run build --workspaces --if-present",
+    "dev": "npm run dev -w web",
+    "dev:web": "npm run dev -w web",
+    "dev:admin": "npm run dev -w admin",
+    "dev:docs": "npm run dev -w docs",
+    "lint": "npm run lint --workspaces --if-present",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "check-types": "npm run check-types --workspaces --if-present"
+  },
+  "devDependencies": {
+    "prettier": "^3.7.4",
+    "typescript": "5.9.2"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "packageManager": "npm@11.12.1",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ]
+}
